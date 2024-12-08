@@ -1,0 +1,243 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* background: #687db6; */
+    color: #333;
+    background: url(cric.jpg);
+}
+
+section {
+    margin: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #37415C;
+    font-size: 2rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: cursive;
+}
+
+
+div {
+    margin-top: 1rem;
+}
+
+div p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#current-matches-list div,
+#series-list div,
+#matches-list div {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    /* margin-left: 2%; */
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+#current-matches-list div:hover,
+#series-list div:hover,
+#matches-list div:hover {
+    background-color: #eef;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+.match-card, .series-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    color: #37415C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.match-card:hover, .series-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    background-color: #eef;
+}
+
+.match-status, .match-date, .series-dates {
+    font-weight: bold;
+    color: #555;
+    font-family: cursive;
+}
+
+b {
+    color: #222;
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #777;
+}
+
+
+footer {
+    background: #37415C;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff ;
+    font-family: cursive;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: cursive;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffd700;
+}
+
+.navbar {
+    background: #37415C;
+    color: #fff;
+    /* padding: 1rem 0; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 4%; */
+    align-items: center;
+}
+
+img.logo {
+    width: 150px;
+    height: 120px; 
+    display: block;
+    margin-left: -2%;
+    margin-top: -1%;
+    object-fit: contain; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: cursive;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+.logo {
+    height: 100px; 
+    width: auto;
+    display: block;
+}
+
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
